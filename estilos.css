@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0.637);
+    margin: 0;
+    padding: 1em 0;
+    color: white;
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    padding: 0 1em;
+}
+
+.parrafoArea{
+    text-align: center;
+}

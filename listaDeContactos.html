@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contactos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <h1>Lista de contactos</h1>
+    <p class="parrafoArea">Realice una interfaz donde se muestre una lista de contactos y en esta pueda consultar,
+        eliminar, agregar y editar contactos.
+    </p>
+    <hr>
+    <table id="miTabla">
+        <thead>
+            <tr>
+                <td>Nombres</td>
+                <td>Apellidos</td>
+                <td>Correo</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <p>
+    <form>
+        <label>Nombre:</label> <input type="text" id="nombre">
+        <label>Apellidos:</label> <input type="text" id="apellidos">
+        <label>Correo:</label> <input type="text" id="correo">
+        <p>
+            <input type="button" onclick="agregarValores();" value="Agregar">
+        </p>
+    </form>
+    </p>
+
+</body>
+
+</html>
+<html>
+
+<head>

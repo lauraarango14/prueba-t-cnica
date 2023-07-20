@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mayor y menor</title>
+</head>
+<body>
+    <h1>Escalera de asteriscos</h1>
+    <p class="parrafoArea">4.Realizar un programa que permite ingresar 20 números al usuario, el programa debe permitir 
+        encontrar el número mayor y menor entre los números digitados.
+    </p>
+    <hr>
+
+    <script>
+        // Inicializar variables y array vacio
+        let numeros = 20
+        let numerosSeparados = []
+        
+        // Se hace un ciclo para preguntarle al usuario la cantidad de números a digitar
+        for (let index = 0; index < numeros; index++) {
+            numerosSeparados = [(Number(prompt(`Digite el número ${index + 1}`))),...numerosSeparados];
+        }
+
+        // Se inicializa la variable para encontrar el valor 
+        var mayor = numerosSeparados[0];
+        var menor = numerosSeparados[0];
+
+        //  Se hace un ciclo para encontrar en el array el mayor y menor
+        for (let i = 1; i < numerosSeparados.length; i++) {
+            if (numerosSeparados[i] > mayor) {
+                mayor = numerosSeparados[i];
+            }
+            if (numerosSeparados[i] < menor) {
+                menor = numerosSeparados[i];
+            }
+
+        }
+
+        // Se imprimen el mayor y el menor
+        document.write(`El número mayor es ${mayor} y el número menor es ${menor}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+    <h1>Secuencia Fibonacci</h1>
+    <p>1. Usando el lenguaje de su preferencia genere una secuencia de Fibonacci. 
+        A partir del 0 y el 1, se van sumando a pares, de manera que cada número es igual 
+        a la suma de sus dos anteriores, de manera que:</p>
+    <hr>
+
+    <!-- Funcionalidad en JS -->
+    <script>
+        // Se inicializan las variables
+        let valor1 = 0;
+        let valor2 = 1;
+        let valor3 = 0;
+
+        // Se imprime las variables en el document
+        document.write( valor1 + " " );
+        document.write( valor2 + " " );
+
+        // Se hace un ciclo while para crear la secuencia Fibonacci 
+        while( valor2 < 55 ){
+            valor3 = valor1 + valor2;
+            valor1 = valor2;
+            valor2 = valor3;
+            document.write( valor3 + " " );
+        }
+    </script>
+</body>
+</html>

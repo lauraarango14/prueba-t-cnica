@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Área</title>
+</head>
+
+<body>
+    <h1>Área de un cuadrado, triángulo y círculo</h1>
+    <p class="parrafoArea">Realizar un programa que dibuje una escalera de asteriscos, el usuario debe indicar el tamaño de dicha escalera.
+    </p>
+    <hr>
+
+    <!-- Funcionalidad en JS -->
+    <script>
+
+        let cuadrado, perimetroc, areac;
+
+        cuadrado = parseInt(prompt('Digíte los lados del cuadrado:'));
+
+        perimetroc = cuadrado * 4;
+        areac = cuadrado * cuadrado;
+
+        document.write("El perímetro del cuadrado es: " + perimetroc + " <br>");
+        document.write("El área del cuadrado es: " + areac + "<br> ");
+
+    </script>
+    <hr>
+    <br>
+    <script>
+
+        let basetr, ladotr, perimetrotr, areatr;
+
+        basetr = parseFloat(prompt("Digíte la base del triángulo" ));
+        ladotr = parseFloat(prompt("Digíte el lado del triángulo" ));
+
+        perimetrotr = basetr + ladotr + ladotr;
+        areatr = (basetr * ladotr) / 2;
+
+        document.write("El perímetro del triángulo es: " + perimetrotr + "<br> ");
+        document.write("El área del triángulo es: " + areatr + "<br> ");
+
+    </script>
+    <hr>
+    <br>
+    <script>
+
+        let pi, areaci, radioci, perimetroci;
+
+        pi = 3.1416;
+
+        radioci = parseFloat(prompt("Digíte el radio del círculo"));
+
+        areaci = pi * radioci * radioci;
+        perimetroci = pi * radioci * 2;
+
+        document.write("El radio del círculo es: " + radioci + "<br>");
+        document.write("El perímetro es: " + perimetroci + "<br> ");
+        document.write("el area es: " + areaci + "<br> ");
+
+    </script>
+</body>
+
+</html>

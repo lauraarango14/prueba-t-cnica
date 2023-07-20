@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista/array de ovejas</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+    <body>
+        <h1>Lista/array de ovejas</h1>
+        <p class="parrafoArea">6.	Considere una lista/array de ovejas. Cada oveja tiene un nombre y un color. Cree una función que devuelva una lista de todas las ovejas rojas cuyos nombres también contengan las letras n y a, 
+            sin importar el orden, las mayúsculas o los espacios.Recuerda. Debe contener las dos letras "a" y "n" en el nombre. No cuente ovejas con una sola letra, debe tener dos letras.
+        </p>
+        <hr>
+    
+        <!-- Funcionalidad en JS -->
+        <script>
+
+            function getOvejas(){
+
+                // Inicio de variables
+                var ovejasFinales2 = []
+    
+                // Array de ovejas
+                const ovejas = [ 
+                    { name: 'Noa', color: 'azul' }, 
+                    { name: 'Euge', color: 'rojo' }, 
+                    { name: 'Navidad', color: 'rojo' }, 
+                    { name: 'Ki Na Ma', color: 'rojo'},
+                    { name: 'AAAAaaaa', color: 'rojo'},
+                    { name: 'Nnnnnnn', color: 'rojo'}
+                ];
+    
+                // Inicia el array vacio
+                var ovejasFiltradas=[];
+                // Ciclo para encontrar ovjas que coincidan con el color y nombre de "n" o "a"
+                for(i=0;i<ovejas.length;i++)
+                {
+                    var name = ovejas[i]["name"];
+                    if((name.includes("N") || name.includes("n")) && (name.includes("a") || name.includes("A")))
+                    {
+                        if(ovejas[i]["color"] == "rojo")
+                        ovejasFiltradas.push(ovejas[i]);
+                    }
+                }
+    
+                // Se transforma el array a string
+                ovejasFinales2 = JSON.stringify(ovejasFiltradas)
+                
+                // Se imprime el objeto
+                document.write(`Las ovejas que coinciden con el color y el nombre "n" ó "a" son: ${ovejasFinales2}`);
+            }
+
+            getOvejas();
+
+        </script>
+</body>
+</html>

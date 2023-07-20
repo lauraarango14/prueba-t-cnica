@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalera de asteriscos</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+
+<body>
+    <h1>Escalera de asteriscos</h1>
+    <p class="parrafoArea">Realizar un programa que dibuje una escalera de asteriscos, el usuario debe indicar el tamaño de dicha escalera.
+    </p>
+    <hr>
+
+    <!-- Funcionalidad en JS -->
+    <script>
+        // Inicializar variables
+        let valor1 
+        let valor2 
+        let valor3;
+
+        // Preguntar al usuario
+        var valor4 = prompt("Digita cuantos asteriscos va a tener la escalera");
+    
+        // Ciclo for para imprimir la escalera con respecto a la cantidad brindada por el usuario
+        for ( valor1 = 1; valor1 <= valor4; valor1++ ) {
+            for ( valor2 = 0; valor2 < valor1; valor2++ ) {
+                valor3 = "x";
+                document.write( valor3 );
+            }
+
+            // Salto de linea 
+            document.write( "<br>" );
+        }
+    </script>
+</body>
+
+</html>
